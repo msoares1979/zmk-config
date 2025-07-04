@@ -87,7 +87,7 @@
             bindings = <
         //╭──────────┬────────────┬─────────────┬──────────────┬──────────────╮   ╭──────────┬──────────┬────────────────┬──────────┬──────────╮
         //│  POWER   │  BT NEXT   │  NEXT       │  BRIGHTNESS+    󰕾 VOL UP    │   │  BROWSER │ CALC     │  FILES         │          │          │
-            &kb K_PWR  &bt BT_NXT   &kp C_NEXT    &kp C_BRI_UP   &kp K_VOL_UP       &kp K_WWW  &kp K_CALC &kp C_AL_FILES   &trans     &trans
+            &kp K_PWR  &bt BT_NXT   &kp C_NEXT    &kp C_BRI_UP   &kp K_VOL_UP       &kp K_WWW  &kp K_CALC &kp C_AL_FILES   &trans     &trans
         //├──────────┼────────────┼─────────────┼──────────────┼──────────────┤   ├──────────┼──────────┼────────────────┼──────────┼──────────┤
         //│          │  BT CLEAR  │  PLAY PAUSE │  BACKLIGHT   │  󰝟 MUTE      │   │          │          │
             &trans     &bt BT_CLR   &kp K_PP      &kp C_BKLT_TOG &kp K_MUTE         &to 0      &to 1      &to 2            &to 3      &to 4
