@@ -72,13 +72,13 @@
         //│ ESC      │  F1          │  F2         │  F3         │  F4          │   │ PRINT     │ HOME     │  UP      │  PG UP    │ NUM LOCK │
             &kp ESC    &kp F1         &kp F2        &kp F3        &kp F4             &kp PSCRN   &kp HOME   &kp UP     &kp PG_UP   &to 4
         //├──────────┼──────────────┼─────────────┼─────────────┼──────────────┤   ├───────────┼──────────┼──────────┼───────────┼──────────┤
-        //│ TAB      │  F5          │  F6         │  F7         │  F8          │   │  INS      │ LEFT     │          │  RIGHT    │  MENU    │
-            &kp TAB    &ht LCTRL F5   &ht LGUI F6   &ht LALT F7   &ht LSHFT F8       &kp INS     &kp LEFT   &trans     &kp RIGHT   &kp K_MENU
+        //│          │  F5          │  F6         │  F7         │  F8          │   │  INS      │ LEFT     │  DOWN    │  RIGHT    │  MENU    │
+            &trans     &ht LCTRL F5   &ht LGUI F6   &ht LALT F7   &ht LSHFT F8       &kp INS     &kp LEFT   &kp DOWN   &kp RIGHT   &kp K_MENU
         //├──────────┼──────────────┼─────────────┼─────────────┼──────────────┤   ├───────────┼──────────┼──────────┼───────────┼──────────┤
-        //│          │   F9         │    F10      │     F11     │  F12         │   │  DELETE   │  END     │  DOWN    │  PG_DOWN  │          │
-            &trans     &kp F9         &kp F10       &kp F11       &kp F12            &kp DEL     &kp END    &kp DOWN   &kp PG_DN   &to 0
+        //│          │   F9         │    F10      │     F11     │  F12         │   │  DELETE   │  END     │          │  PG_DOWN  │          │
+            &trans     &kp F9         &kp F10       &kp F11       &kp F12            &kp DEL     &kp END    &trans     &kp PG_DN   &to 0
         //╰──────────┴──────────────┴─────────────┼─────────────┼──────────────┤   ├───────────┼──────────┼──────────┴───────────┴──────────╯
-                                                    &trans     &trans                &trans     &trans
+                                                    &trans        &trans             &trans      &trans
         //                                        ╰─────────────┴──────────────╯   ╰───────────┴──────────╯
             >;
         };
@@ -106,11 +106,11 @@
         //│ ESC      │  Q       │  ⬆️      │  E       │  R       │   │  0           │  1       │  2       │  3       │  /       │
             &kp ESC    &kp Q      &kp UP     &kp E      &kp R          &kp N0         &kp N1     &kp N2     &kp N3     &kp KP_DIVIDE
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────────┼──────────┼──────────┼──────────┤──────────┤
-        //│ TAB      │  ⬅️      │  ⬇️      │  ➡️      │  G       │   │  +           │  4       │  5       │  6       │  *       │
-            &kp TAB    &kp LEFT   &kp DOWN   &kp RIGHT  &kp G          &kp KP_PLUS    &kp N4     &kp N5     &kp N6     &kp KP_MULTIPLY
+        //│ SHIFT    │  ⬅️      │  ⬇️      │  ➡️      │  G       │   │  +           │  4       │  5       │  6       │  *       │
+            &kp RSHFT  &kp LEFT   &kp DOWN   &kp RIGHT  &kp G          &kp KP_PLUS    &kp N4     &kp N5     &kp N6     &kp KP_MULTIPLY
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────────├──────────┼──────────┼──────────┤──────────┤
-        //│ SHIFT    │  Z       │  X       │  C       │  V       │   │  -           │  7       │  8       │  9       │  ,       │
-            &kp LSHFT  &kp Z      &kp X      &kp C      &kp V          &kp KP_MINUS   &kp N7     &kp N8     &kp N9     &kp KP_COMMA
+        //│ CTRL     │  Z       │  X       │  C       │  V       │   │  -           │  7       │  8       │  9       │  ,       │
+            &kp LCTRL  &kp Z      &kp X      &kp C      &kp V          &kp KP_MINUS   &kp N7     &kp N8     &kp N9     &kp KP_COMMA
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────────┼──────────┼──────────┼──────────┴──────────╯
                                              &trans     &trans         &trans         &trans
         //                                 ╰──────────┴──────────╯   ╰──────────────┴──────────╯
