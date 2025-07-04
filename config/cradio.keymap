@@ -102,18 +102,18 @@
 
         fn_layer {
             bindings = <
-        //╭──────────┬────────────┬─────────────┬────────────────┬──────────────╮   ╭──────────┬──────────┬────────────────┬──────────┬──────────╮
-        //│ ESC      │  BT NEXT   │  NEXT       │  BRIGHTNESS+      󰕾 VOL UP    │   │  POWER   │          │                │          │          │
-            &kp ESC    &kp BT_NXT   &kp C_NEXT    &kp C_BRI_UP     &kp K_VOL_UP       &kp K_PWR  &trans     &trans           &trans     &trans
-        //├──────────┼────────────┼─────────────┼────────────────┼──────────────┤   ├──────────┼──────────┼────────────────┼──────────┼──────────┤
-        //│ TAB      │  BT CLEAR  │  PLAY PAUSE │  BACKLIGHT     │  󰝟 MUTE      │   │  BROWSER │ CALC     │  FILES         │          │          │
-            &kp TAB    &kp BT_CLR   &kp K_PP      &kp K_BKLT_TOG   &kp K_MUTE         &kp K_WWW  &kp K_CALC &kp C_AL_FILES   &trans     &trans
-        //├──────────┼────────────┼─────────────┼────────────────┼──────────────┤   ├──────────┼──────────┼────────────────┼──────────┼──────────┤
-        //│          │   BT PREV  │  PREV       │  BRIGHTNESS-   │   VOL DOWN  │   │          │          │                │          │          │
-            &trans     &kp BT_PRV   &kp C_PREV    &kp C_BRI_DN     &kp K_VOL_DN       &trans     &trans     &trans           &trans     &trans
-        //╰──────────┴────────────┴─────────────┴────────────────┼──────────────┤   ├──────────┼──────────┼────────────────┴──────────┴──────────╯
-                                                  &trans           &trans             &trans     &trans
-        //                                      ╰────────────────┴──────────────╯   ╰──────────┴──────────╯
+        //╭──────────┬────────────┬─────────────┬──────────────┬──────────────╮   ╭──────────┬──────────┬────────────────┬──────────┬──────────╮
+        //│ ESC      │  BT NEXT   │  NEXT       │  BRIGHTNESS+    󰕾 VOL UP    │   │  POWER   │          │                │          │          │
+            &kp ESC    &bt BT_NXT   &kp C_NEXT    &kp C_BRI_UP   &kp K_VOL_UP       &kp K_PWR  &trans     &trans           &trans     &trans
+        //├──────────┼────────────┼─────────────┼──────────────┼──────────────┤   ├──────────┼──────────┼────────────────┼──────────┼──────────┤
+        //│ TAB      │  BT CLEAR  │  PLAY PAUSE │  BACKLIGHT   │  󰝟 MUTE      │   │  BROWSER │ CALC     │  FILES         │          │          │
+            &kp TAB    &bt BT_CLR   &kp K_PP      &kp C_BKLT_TOG &kp K_MUTE         &kp K_WWW  &kp K_CALC &kp C_AL_FILES   &trans     &trans
+        //├──────────┼────────────┼─────────────┼──────────────┼──────────────┤   ├──────────┼──────────┼────────────────┼──────────┼──────────┤
+        //│          │   BT PREV  │  PREV       │  BRIGHTNESS- │   VOL DOWN  │   │          │          │                │          │          │
+            &trans     &bt BT_PRV   &kp C_PREV    &kp C_BRI_DN   &kp K_VOL_DN       &trans     &trans     &trans           &trans     &trans
+        //╰──────────┴────────────┴─────────────┴──────────────┼──────────────┤   ├──────────┼──────────┼────────────────┴──────────┴──────────╯
+                                                  &trans         &trans             &trans     &trans
+        //                                      ╰──────────────┴──────────────╯   ╰──────────┴──────────╯
             >;
         };
     };
