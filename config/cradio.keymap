@@ -49,28 +49,11 @@
             >;
         };
 
-        right_layer {
-            bindings = <
-        //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────────┬──────────┬──────────┬──────────┬──────────╮
-        //│ ESC      │  Q       │  ⬆️      │  E       │  R       │   │  0           │  1       │  2       │  3       │  /       │
-            &kp ESC    &kp Q      &kp UP     &kp E      &kp R          &kp N0         &kp N1     &kp N2     &kp N3     &kp KP_DIVIDE
-        //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────────┼──────────┼──────────┼──────────┤──────────┤
-        //│ TAB      │  ⬅️      │  ⬇️      │  ➡️      │  G       │   │  +           │  4       │  5       │  6       │  *       │
-            &kp TAB    &kp LEFT   &kp DOWN   &kp RIGHT  &kp G          &kp KP_PLUS    &kp N4     &kp N5     &kp N6     &kp KP_MULTIPLY
-        //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────────├──────────┼──────────┼──────────┤──────────┤
-        //│ SHIFT    │  Z       │  X       │  C       │  V       │   │  -           │  7       │  8       │  9       │  ,       │
-            &kp LSHFT  &kp Z      &kp X      &kp C      &kp V          &kp KP_MINUS   &kp N7     &kp N8     &kp N9     &kp KP_COMMA
-        //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────────┼──────────┼──────────┼──────────┴──────────╯
-                                             &trans     &trans         &trans         &trans
-        //                                 ╰──────────┴──────────╯   ╰──────────────┴──────────╯
-            >;
-        };
-
-        left_layer {
+        symbols_layer {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-        //│ ESC      │ ` ~      │  ~       │          │          │   │  {       │  [       │  ]       │  }       │  ' "     │
-            &kp ESC    &kp GRAVE  &kp TILDE  &trans     &trans         &kp LBRC   &kp LBKT   &kp RBKT   &kp RBRC   &kp SQT
+        //│ ` ~      │  ~       │          │          │          │   │  {       │  [       │  ]       │  }       │  ' "     │
+            &kp GRAVE  &kp TILDE  &trans     &trans     &trans          &kp LBRC   &kp LBKT   &kp RBKT   &kp RBRC   &kp SQT
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  !       │  @       │  #       │  $       │  %       │   │  ^       │  &       │  *       │  (       │  )       │
             &kp EXCL   &kp AT     &kp HASH   &kp DLLR   &kp PRCNT      &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR   &kp RPAR
@@ -83,7 +66,7 @@
             >;
         };
 
-        tri_layer {
+        nav_functions_layer {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│ ESC      │  F1      │  F2      │  F3      │  F4      │   │ PRINT    │ HOME     │  UP      │  PG UP   │  INSERT  │
@@ -100,14 +83,31 @@
             >;
         };
 
-        fn_layer {
+        gaming_numpad_layer {
+            bindings = <
+        //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────────┬──────────┬──────────┬──────────┬──────────╮
+        //│ ESC      │  Q       │  ⬆️      │  E       │  R       │   │  0           │  1       │  2       │  3       │  /       │
+            &kp ESC    &kp Q      &kp UP     &kp E      &kp R          &kp N0         &kp N1     &kp N2     &kp N3     &kp KP_DIVIDE
+        //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────────┼──────────┼──────────┼──────────┤──────────┤
+        //│ TAB      │  ⬅️      │  ⬇️      │  ➡️      │  G       │   │  +           │  4       │  5       │  6       │  *       │
+            &kp TAB    &kp LEFT   &kp DOWN   &kp RIGHT  &kp G          &kp KP_PLUS    &kp N4     &kp N5     &kp N6     &kp KP_MULTIPLY
+        //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────────├──────────┼──────────┼──────────┤──────────┤
+        //│ SHIFT    │  Z       │  X       │  C       │  V       │   │  -           │  7       │  8       │  9       │  ,       │
+            &kp LSHFT  &kp Z      &kp X      &kp C      &kp V          &kp KP_MINUS   &kp N7     &kp N8     &kp N9     &kp KP_COMMA
+        //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────────┼──────────┼──────────┼──────────┴──────────╯
+                                             &trans     &trans         &trans         &trans
+        //                                 ╰──────────┴──────────╯   ╰──────────────┴──────────╯
+            >;
+        };
+
+        media_layer {
             bindings = <
         //╭──────────┬────────────┬─────────────┬──────────────┬──────────────╮   ╭──────────┬──────────┬────────────────┬──────────┬──────────╮
-        //│ ESC      │  BT NEXT   │  NEXT       │  BRIGHTNESS+    󰕾 VOL UP    │   │  POWER   │          │                │          │          │
-            &kp ESC    &bt BT_NXT   &kp C_NEXT    &kp C_BRI_UP   &kp K_VOL_UP       &kp K_PWR  &trans     &trans           &trans     &trans
+        //│ ESC      │  BT NEXT   │  NEXT       │  BRIGHTNESS+    󰕾 VOL UP    │   │  BROWSER │ CALC     │  FILES         │          │  POWER   │          │                │          │          │
+            &kp ESC    &bt BT_NXT   &kp C_NEXT    &kp C_BRI_UP   &kp K_VOL_UP       &kp K_WWW  &kp K_CALC &kp C_AL_FILES   &trans     &kp K_PWR
         //├──────────┼────────────┼─────────────┼──────────────┼──────────────┤   ├──────────┼──────────┼────────────────┼──────────┼──────────┤
-        //│ TAB      │  BT CLEAR  │  PLAY PAUSE │  BACKLIGHT   │  󰝟 MUTE      │   │  BROWSER │ CALC     │  FILES         │          │          │
-            &kp TAB    &bt BT_CLR   &kp K_PP      &kp C_BKLT_TOG &kp K_MUTE         &kp K_WWW  &kp K_CALC &kp C_AL_FILES   &trans     &trans
+        //│ TAB      │  BT CLEAR  │  PLAY PAUSE │  BACKLIGHT   │  󰝟 MUTE      │   │          │          │
+            &kp TAB    &bt BT_CLR   &kp K_PP      &kp C_BKLT_TOG &kp K_MUTE         &trans     &trans     &trans           &trans     &trans
         //├──────────┼────────────┼─────────────┼──────────────┼──────────────┤   ├──────────┼──────────┼────────────────┼──────────┼──────────┤
         //│          │   BT PREV  │  PREV       │  BRIGHTNESS- │   VOL DOWN  │   │          │          │                │          │          │
             &trans     &bt BT_PRV   &kp C_PREV    &kp C_BRI_DN   &kp K_VOL_DN       &trans     &trans     &trans           &trans     &trans
