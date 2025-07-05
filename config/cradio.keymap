@@ -93,7 +93,7 @@
             &none        &none        &kp K_VOL_DN   &kp K_MUTE      &kp K_VOL_UP       &none           &none          &none            &none            &none
         //├────────────┼────────────┼──────────────┼───────────────┼──────────────┤   ├───────────────┼──────────────┼────────────────┼─────────────────┼────────────┤
         //│            │            │   PREV      │   CLR        │   NEXT      │   │  CALC         │  BROWSER     │  FILES         │  IMAGES         │            │
-            &none        &none        &bt BT_PRV     &bt BT_CLR      &bt BT_NXT         &kp C_AL_CALC   &kp C_AL_WWW   &kp C_AL_FILES   &kp C_AL_IMAGES   &none
+            &bootloader  &none        &bt BT_PRV     &bt BT_CLR      &bt BT_NXT         &kp C_AL_CALC   &kp C_AL_WWW   &kp C_AL_FILES   &kp C_AL_IMAGES   &bootloader
         //╰────────────┴────────────┴──────────────┴───────────────┼──────────────┤   ├───────────────┼──────────────┴────────────────┴─────────────────┼────────────╯
                                                      &trans          &trans             &trans          &trans
         //                                         ╰───────────────┴──────────────╯   ╰───────────────┴──────────────╯
