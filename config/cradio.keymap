@@ -129,7 +129,7 @@
             &none        &none        &none         &none        &none            &msc SCRL_UP &mkp LCLK    &mkp MCLK     &mkp RCLK    &none
         //├────────────┼────────────┼─────────────┼────────────┼────────────┤   ├────────────┼────────────┼─────────────┼────────────┤────────────┤
         //│            │            │             │            │            │   │            │            │             │            │            │
-            &kp LSHFT    &kp LCTRL    &kp RGUI      &kp LALT     &kp RALT         &msc SCRL_DOWN &none      &mmv MOVE_UP  &none        &none
+            &kp LSHFT    &kp LCTRL    &kp LGUI      &kp LALT     &kp RALT         &msc SCRL_DOWN &none      &mmv MOVE_UP  &none        &none
         //├────────────┼────────────┼─────────────┼────────────┼────────────┤   ├────────────┼────────────┼─────────────┼────────────┤────────────┤
         //│            │            │             │            │            │   │            │            │             │            │            │
             &none        &none        &none         &none        &none            &none        &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_RIGHT &none
