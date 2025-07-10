@@ -43,13 +43,13 @@
             require-prior-idle-ms = <100>;
             bindings = <&kp>, <&kp>;
         };
-        caps: mod_tap {
+        caps: caps_or_sticky {
             compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <0>;
+            #binding-cells = <2>;
             flavor = "tap-preferred";
             tapping-term-ms = <200>;
-            bindings = <&kp CAPS>, <&sk LSHFT>;
-            display-name = "Caps-Mod-Tap";
+            bindings = <&kp>, <&sk>;
+            display-name = "Caps";
         };
         td_q_esc: tap_dance {
           compatible = "zmk,behavior-tap-dance";
@@ -113,7 +113,7 @@
             bindings = <
         //╭────────────┬────────────┬─────────────┬────────────┬────────────╮   ╭────────────┬────────────┬─────────────┬────────────┬────────────╮
         //│ ESC        │  F1        │  F2         │  F3        │  F4        │   │  INS       │  HOME      │             │  PG UP     │            │
-            &kp ESC      &kp F1       &kp F2        &kp F3       &kp F4           &kp INS      &kp HOME     &none         &kp PG_UP    &caps
+            &kp ESC      &kp F1       &kp F2        &kp F3       &kp F4           &kp INS      &kp HOME     &none         &kp PG_UP    &caps CAPS LSHFT
         //├────────────┼────────────┼─────────────┼────────────┼────────────┤   ├────────────┼────────────┼─────────────┼────────────┤────────────┤
         //│            │  F5        │  F6         │  F7        │  F8        │   │  DELETE    │  END       │   ⬆️        │  PG_DOWN   │            │
             &kp LSHFT    &ht LCTRL F5 &ht LGUI F6   &ht LALT F7  &ht RALT F8      &ht RALT DEL &ht LALT END &kp UP        &ht RCTRL PG_DN &kp RSHFT
