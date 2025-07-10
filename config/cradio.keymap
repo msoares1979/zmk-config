@@ -98,7 +98,7 @@
         nav_functions_layer {
             bindings = <
         //╭────────────┬────────────┬─────────────┬────────────┬────────────╮   ╭────────────┬────────────┬─────────────┬────────────┬────────────╮
-        //│ ESC        │  F1        │  F2         │  F3        │  F4        │   │  INS       │  HOME      │             │  PG UP     │            │aaaaaaaaaam
+        //│ ESC        │  F1        │  F2         │  F3        │  F4        │   │  INS       │  HOME      │             │  PG UP     │            │
             &kp ESC      &kp F1       &kp F2        &kp F3       &kp F4           &kp INS      &kp HOME     &none         &kp PG_UP    &none
         //├────────────┼────────────┼─────────────┼────────────┼────────────┤   ├────────────┼────────────┼─────────────┼────────────┤────────────┤
         //│            │  F5        │  F6         │  F7        │  F8        │   │  DELETE    │  END       │   ⬆️        │  PG_DOWN   │            │
@@ -149,11 +149,11 @@
         mouse_layer {
             bindings = <
         //╭────────────┬────────────┬─────────────┬────────────┬────────────╮   ╭────────────┬────────────┬─────────────┬────────────┬────────────╮
-        //│            │            │             │            │            │   │  󰍽        │  󰍽 󰳽       │  󰍽 󰳽        │  󰍽 󰳽       │            │
-            &none        &none        &none         &none        &none            &msc SCRL_UP &mkp LCLK    &mkp MCLK     &mkp RCLK    &none
+        //│            │            │             │            │            │   │  󰍽        │            │  󰍽 󰳽        │            │            │
+            &none        &none        &none         &none        &none            &msc SCRL_UP &none        &mkp MCLK     &none        &none
         //├────────────┼────────────┼─────────────┼────────────┼────────────┤   ├────────────┼────────────┼─────────────┼────────────┤────────────┤
-        //│            │            │             │            │            │   │  󰍽        │            │  󰍽         │            │            │
-            &kp LSHFT    &kp LCTRL    &kp LGUI      &kp LALT     &kp RALT         &msc SCRL_DOWN &none      &mmv MOVE_UP  &none        &none
+        //│            │            │             │            │            │   │  󰍽        │  󰍽 󰳽       │  󰍽         │  󰍽 󰳽       │            │
+            &kp LSHFT    &kp LCTRL    &kp LGUI      &kp LALT     &kp RALT         &msc SCRL_DOWN &mkp LCLK  &mmv MOVE_UP  &mkp RCLK    &none
         //├────────────┼────────────┼─────────────┼────────────┼────────────┤   ├────────────┼────────────┼─────────────┼────────────┤────────────┤
         //│            │            │             │            │            │   │            │  󰍽        │  󰍽         │  󰍽        │            │
             &none        &none        &none         &none        &none            &none        &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_RIGHT &none
