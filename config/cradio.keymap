@@ -147,13 +147,13 @@
             bindings = <
         //╭────────────┬────────────┬─────────────┬────────────┬────────────╮   ╭────────────┬────────────┬─────────────┬────────────┬────────────╮
         //│ ESC        │  Q         │  ⬆️         │  E         │  R         │   │  0         │  1         │  2          │  3         │  /         │
-            &kp ESC      &kp Q      &kp UP          &kp E        &kp R            &kp KP_0     &kp KP_1     &kp KP_2      &kp KP_3     &kp KP_DIVIDE
+            &kp ESC      &kp Q      &kp UP          &kp E        &kp R            &kp KP_N0    &kp KP_N1    &kp KP_N2     &kp KP_N3    &kp KP_DIVIDE
         //├────────────┼────────────┼─────────────┼────────────┼────────────┤   ├────────────┼────────────┼─────────────┼────────────┤────────────┤
         //│ SHIFT      │  ⬅️        │  ⬇️         │  ➡️        │  G         │   │  +         │  4         │  5          │  6         │  *         │
-            &kp RSHFT    &kp LEFT     &kp DOWN      &kp RIGHT    &kp G            &kp KP_PLUS  &kp KP_4     &kp KP_5      &kp KP_6     &kp KP_MULTIPLY
+            &kp RSHFT    &kp LEFT     &kp DOWN      &kp RIGHT    &kp G            &kp KP_PLUS  &kp KP_N4    &kp KP_N5     &kp KP_N6    &kp KP_MULTIPLY
         //├────────────┼────────────┼─────────────┼────────────┼────────────┤   ├────────────┼────────────┼─────────────┼────────────┤────────────┤
         //│ CTRL       │  Z         │  X          │  C         │  V         │   │  -         │  7         │  8          │  9         │  ,         │
-            &kp LCTRL    &kp Z        &kp X         &kp C        &kp V            &kp KP_MINUS &kp KP_7     &kp KP_8      &kp KP_9     &kp KP_COMMA
+            &kp LCTRL    &kp Z        &kp X         &kp C        &kp V            &kp KP_MINUS &kp KP_N7    &kp KP_N8     &kp KP_N9    &kp KP_COMMA
         //╰────────────┴────────────┴─────────────┼────────────┼────────────┤   ├────────────┼────────────┼─────────────┼────────────┴────────────╯
                                                     &trans       &trans           &trans       &to KEYS
         //                                        ╰────────────┴────────────╯   ╰────────────┴────────────╯
