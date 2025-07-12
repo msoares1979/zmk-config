@@ -79,24 +79,6 @@
           tapping-term-ms = <200>;
           bindings = <&kp Q>, <&kp ESC>;
         };
-        EXCL_PIPE: EXCL_PIPE {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp EXCL>, <&kp PIPE>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-        PRCNT_BSLH: PRCNT_BSLH {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp PRCNT>, <&kp BSLH>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-        CARET_FSLH: CARET_FSLH {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp CARET>, <&kp FSLH>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
 	};
 
     conditional_layers {
@@ -135,8 +117,8 @@
         //│ ` ~        │  ~         │  {          │  }         │  (         │         │  )         │  [         │  ]          │  '         │  "         │
             &ht LSHFT GRAVE &ht LCTRL TILDE &ht LGUI LBRC &ht LALT RBRC &kp LPAR        &kp RPAR     &ht LALT LBKT &ht LGUI RBKT &ht RCTRL SQT &ht RSHFT DQT
         //├────────────┼────────────┼─────────────┼────────────┼────────────┤         ├────────────┼────────────┼─────────────┼────────────┤────────────┤
-        //│ ! │        │  @         │  #          │  $         │  % \       │         │  ^ /       │  &         │  *          │  - _       │  = +       │
-            &EXCL_PIPE   &kp AT       &kp HASH      &kp DOLLAR   &PRCNT_BSLH            &CARET_FSLH  &kp AMPS     &kp STAR      &kp MINUS    &kp EQUAL
+        //│ !          │  @         │  #          │  $         │  %         │         │  ^         │  &         │  *          │  - _       │  = +       │
+            &kp EXCL     &kp AT       &kp HASH      &kp DOLLAR   &kp PRCNT              &kp CARET    &kp AMPS     &kp STAR      &kp MINUS    &kp EQUAL
         //╰────────────┴────────────┴─────────────┼────────────┼────────────┤         ├────────────┼────────────┼─────────────┼────────────┴────────────╯
                                                     &trans       &trans                 &trans       &trans
         //                                        ╰────────────┴────────────╯         ╰────────────┴────────────╯
