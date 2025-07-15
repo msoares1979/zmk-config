@@ -78,11 +78,17 @@
           tapping-term-ms = <200>;
           bindings = <&kp Q>, <&kp ESC>;
         };
+        lon: toggle_layer_on_only {
+            compatible = "zmk,behavior-toggle-layer";
+            #binding-cells = <1>;
+            display-name = "Toggle Layer On";
+            toggle-mode = "on";
+        };
         numto: numlock_and_go_to {
           label = "MACRO_NUMLOCK_AND_GO_TO_LAYER";
           compatible = "zmk,behavior-macro-one-param";
           #binding-cells = <1>;
-          bindings = <&kp KP_NUM>, <&macro_param_1to1>, <&to MACRO_PLACEHOLDER>;
+          bindings = <&kp KP_NUM>, <&macro_param_1to1>, <&lon MACRO_PLACEHOLDER>;
         };
 	};
 
@@ -154,7 +160,7 @@
             &kp K_PWR    &none        &kp C_BRI_DN  &none        &kp C_BRI_UP     &kp PSCRN    &kp C_PREV   &kp C_STOP    &kp C_PP     &kp C_NEXT
         //├────────────┼────────────┼─────────────┼────────────┼────────────┤   ├────────────┼────────────┼─────────────┼────────────┤────────────┤
         //│            │            │   VOL DOWN │  󰝟 MUTE    │  󰕾 VOL UP  │   │            │            │             │            │            │
-            &none        &none        &kp K_VOL_DN  &kp K_MUTE   &kp K_VOL_UP     &to KEYS     &none        &none         &numto GAMENUM &to MOUSE
+            &none        &none        &kp K_VOL_DN  &kp K_MUTE   &kp K_VOL_UP     &to KEYS     &none        &none         &numto GAMENUM &lon MOUSE
         //├────────────┼────────────┼─────────────┼────────────┼────────────┤   ├────────────┼────────────┼─────────────┼────────────┤────────────┤
         //│            │            │   PREV     │   CLR     │   NEXT    │   │            │  FILES     │  BROWSER    │  CALC      │            │
             &bootloader  &none        &bt BT_PRV    &bt BT_CLR   &bt BT_NXT       &none        &kp C_AL_FILES &kp C_AL_WWW &kp C_AL_CALC &bootloader
@@ -177,7 +183,7 @@
             &kp LCTRL    &kp Z        &kp X         &kp C        &kp V            &kp KP_COMMA &kp KP_N1    &kp KP_N2     &kp KP_N3    &kp KP_EQUAL
         //╰────────────┴────────────┴─────────────┼────────────┼────────────┤   ├────────────┼────────────┼─────────────┼────────────┴────────────╯
         //                                                       󱁐                󰌑            0
-                                                    &lt SYMS TAB &kp SPACE        &kp ENTER    &lt NAVS KP_N0
+                                                    &lt SYMS TAB &trans           &trans       &lt NAVS KP_N0
         //                                        ╰────────────┴────────────╯   ╰────────────┴────────────╯
             >;
         };
@@ -195,7 +201,7 @@
             &none        &none        &none         &none        &none            &none        &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_RIGHT &none
         //╰────────────┴────────────┴─────────────┼────────────┼────────────┤   ├────────────┼────────────┼─────────────┼────────────┴────────────╯
         //                                                       󱁐                󰌑            󰁮
-                                                    &lt SYMS TAB &kp SPACE        &kp ENTER    &lt NAVS BSPC
+                                                    &trans       &trans           &trans       &trans
         //                                        ╰────────────┴────────────╯   ╰────────────┴────────────╯
             >;
         };
