@@ -92,13 +92,13 @@
         };
         numon: numlock_and_layer_on {
           label = "MACRO_NUMLOCK_AND_LAYER_ON";
-          compatible = "zmk,behavior-macro-zero-param";
+          compatible = "zmk,behavior-macro";
           #binding-cells = <0>;
           bindings = <&kp KP_NUM>, <&lon GAMENUM>;
         };
         numoff: numlock_and_layer_off {
           label = "MACRO_NUMLOCK_AND_LAYER_OFF";
-          compatible = "zmk,behavior-macro-zero-param";
+          compatible = "zmk,behavior-macro";
           #binding-cells = <0>;
           bindings = <&kp KP_NUM>, <&loff GAMENUM>;
         };
