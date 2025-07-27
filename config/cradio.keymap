@@ -59,15 +59,20 @@
         ss: autoshift_test {
           compatible = "zmk,behavior-macro-one-param";
           #binding-cells = <1>;
-          bindings =
-            <&macro_param_1to1>,
-            <&macro_param_1to2>,
-            <&as_ht MACRO_PLACEHOLDER MACRO_PLACEHOLDER>;
+          bindings = <&macro_param_1to1 &macro_param_1to2 &as_ht MACRO_PLACEHOLDER MACRO_PLACEHOLDER>;
         };
-        caps: caps_word {
+        caps_word: caps_word {
           compatible = "zmk,behavior-caps-word";
           #binding-cells = <0>;
           continue-list = <UNDERSCORE MINUS BSPC>;
+        };
+        caps: caps_word_toogle {
+          compatible = "zmk,behavior-macro";
+          #binding-cells = <0>;
+          bindings =
+            <&kp CAPS>,
+            <&caps_word>,
+            <&kp CAPS>;
         };
         ht: hold_tap {
             compatible = "zmk,behavior-hold-tap";
