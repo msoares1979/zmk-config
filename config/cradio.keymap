@@ -65,6 +65,14 @@
             require-prior-idle-ms = <100>;
             bindings = <&kp>, <&kp>;
         };
+        sk: sticky_key_quick_release {
+          compatible = "zmk,behavior-sticky-key";
+          #binding-cells = <1>;
+          bindings = <&kp>;
+          release-after-ms = <2000>;
+          quick-release;
+          ignore-modifiers;
+        };
         td_q_esc: tap_dance {
           compatible = "zmk,behavior-tap-dance";
           #binding-cells = <0>;
@@ -104,11 +112,6 @@
             then-layer = <5>;
         };
     };
-
-  &sk {
-    release-after-ms = <2000>;
-    quick-release;
-  };
 
     keymap {
         compatible = "zmk,keymap";
