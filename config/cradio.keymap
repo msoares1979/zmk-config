@@ -56,11 +56,6 @@
             <&macro_param_1to2>,
             <&as_ht MACRO_PLACEHOLDER MACRO_PLACEHOLDER>;
         };
-        ss: autoshift_test {
-          compatible = "zmk,behavior-macro-one-param";
-          #binding-cells = <1>;
-          bindings = <&macro_param_1to1 &macro_param_1to2 &as_ht MACRO_PLACEHOLDER MACRO_PLACEHOLDER>;
-        };
         caps_word: caps_word {
           compatible = "zmk,behavior-caps-word";
           #binding-cells = <0>;
@@ -135,7 +130,7 @@
             &kp A       &kp S         &kp D         &kp F        &kp G            &kp H        &kp J        &kp K         &kp L        &as SEMI
         //├────────────┼────────────┼─────────────┼────────────┼────────────┤   ├────────────┼────────────┼─────────────┼────────────┤────────────┤
         //│  Z         │  X         │  C          │  V         │  B         │   │  N         │  M         │  , <        │  . >       │  / ?       │
-            &kp Z        &kp X        &kp C         &kp V        &kp B            &kp N        &kp M        &ss COMMA     &ss DOT      &as FSLH
+            &kp Z        &kp X        &kp C         &kp V        &kp B            &kp N        &kp M        &as COMMA     &as DOT      &as FSLH
         //╰────────────┴────────────┴─────────────┼────────────┼────────────┤   ├────────────┼────────────┼─────────────┼────────────┴────────────╯
                                                     &lt SYMS TAB &kp SPACE        &kp ENTER    &lt NAVS BSPC
         //                                        ╰────────────┴────────────╯   ╰────────────┴────────────╯
