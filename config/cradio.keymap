@@ -78,7 +78,7 @@
             require-prior-idle-ms = <100>;
             bindings = <&kp>, <&kp>;
         };
-        sk: sticky_key_quick_release {
+        sk: sticky_key {
           compatible = "zmk,behavior-sticky-key";
           #binding-cells = <1>;
           bindings = <&kp>;
