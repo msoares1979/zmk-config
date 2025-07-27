@@ -224,8 +224,8 @@
         //│            │            │   VOL DOWN │  󰝟 MUTE    │  󰕾 VOL UP  │   │            │            │             │            │            │
             &none        &none        &kp K_VOL_DN  &kp K_MUTE   &kp K_VOL_UP     &to KEYS     &none        &none         &numon         &lon MOUSE
         //├────────────┼────────────┼─────────────┼────────────┼────────────┤   ├────────────┼────────────┼─────────────┼────────────┤────────────┤
-        //│            │            │   PREV     │   CLR     │   NEXT    │   │            │  FILES     │  BROWSER    │  CALC      │            │
-            &bootloader  &none        &bt BT_PRV    &bt BT_CLR   &bt BT_NXT       &none        &kp C_AL_FILES &kp C_AL_WWW &kp C_AL_CALC &bootloader
+        //│            │   BT CLR  │   BT 0     │   BT 1    │   BT 2    │   │            │  FILES     │  BROWSER    │  CALC      │            │
+            &bootloader  &bt BT_CLR   &bt BT_SEL 0  &bt BT_SEL 1 &bt BT_SEL 2     &none        &kp C_AL_FILES &kp C_AL_WWW &kp C_AL_CALC &bootloader
         //╰────────────┴────────────┴─────────────┼────────────┼────────────┤   ├────────────┼────────────┼─────────────┼────────────┴────────────╯
                                                     &trans       &trans           &trans       &trans
         //                                        ╰────────────┴────────────╯   ╰────────────┴────────────╯
