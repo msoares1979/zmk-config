@@ -144,14 +144,14 @@
         //│  ESC       │  Q         │            │  E         │  R         │   │            │  7         │  8          │  9         │  - /       │
             &kp ESC      &kp Q        &kp UP        &kp E        &kp R            &numoff      &kp KP_N7    &kp KP_N8     &kp KP_N9    &ht KP_DIVIDE KP_MINUS
         //├────────────┼────────────┼─────────────┼────────────┼────────────┤   ├────────────┼────────────┼─────────────┼────────────┤────────────┤
-        //│  󰘶         │           │            │           │  F         │   │  󰁮         │  4         │  5          │  6         │  + *       │
-            &kp LSHFT    &kp LEFT     &kp DOWN      &kp RIGHT    &kp F            &kp BSPC     &kp KP_N4    &kp KP_N5     &kp KP_N6    &ht KP_MULTIPLY KP_PLUS
+        //│  󰘶         │           │            │           │  F         │   │            │  4         │  5          │  6         │  + *       │
+            &kp LSHFT    &kp LEFT     &kp DOWN      &kp RIGHT    &kp F            &none        &kp KP_N4    &kp KP_N5     &kp KP_N6    &ht KP_MULTIPLY KP_PLUS
         //├────────────┼────────────┼─────────────┼────────────┼────────────┤   ├────────────┼────────────┼─────────────┼────────────┤────────────┤
-        //│  󰘴         │  Z         │  X          │  C         │  V         │   │  ,         │  1         │  2          │  3         │  =         │
-            &kp LCTRL    &kp Z        &kp X         &kp C        &kp V            &kp KP_COMMA &kp KP_N1    &kp KP_N2     &kp KP_N3    &kp KP_EQUAL
+        //│  󰘴         │  Z         │  X          │  C         │  V         │   │  0         │  1         │  2          │  3         │  , .       │
+            &kp LCTRL    &kp Z        &kp X         &kp C        &kp V            &kp KP_N0    &kp KP_N1    &kp KP_N2     &kp KP_N3    &ht KP_DOT KP_COMMA
         //╰────────────┴────────────┴─────────────┼────────────┼────────────┤   ├────────────┼────────────┼─────────────┴────────────┴────────────╯
-        //                                        │           │  󱁐         │   │  󰌑         │  0         │
-                                                    &trans       &trans           &trans       &lt NAVS KP_N0
+        //                                        │           │  󱁐         │   │  󰌑         │  󰁮         │
+                                                    &trans       &trans           &trans       &trans
         //                                        ╰────────────┴────────────╯   ╰────────────┴────────────╯
             >;
         };
