@@ -184,7 +184,7 @@
             &sk LSHFT   &sk LCTRL    &sk LGUI       &sk LALT     &sk RALT          &ht RALT DEL &ht LALT END  &kp UP        &ht RCTRL PG_DN &sk RSHFT
         //├───────────┼────────────┼──────────────┼────────────┼─────────────┤   ├────────────┼─────────────┼─────────────┼────────────┤────────────┤
         //│  󰕌        │  󰆐         │  󰆏           │  󰆒         │   MENU     │   │           │            │  󱨉          │           │  CAPS WORD │
-            &kp K_UNDO  &kp K_CUT    &kp K_COPY     &kp K_PASTE  &kp K_CMENU       &kp LC(N)    &kp LEFT      &kp DOWN      &kp RIGHT    &caps_word
+            &kp LC(Z)   &kp LC(X)    &kp LC(C)      &kp LC(V)    &kp K_CMENU       &kp LC(N)    &kp LEFT      &kp DOWN      &kp RIGHT    &caps_word
         //╰───────────┴────────────┴──────────────┼────────────┼─────────────┤   ├────────────┼─────────────┼─────────────┴────────────┴────────────╯
         //                                        │ [  #####] │  󱁐          │   │  󰌑         │  󰁮          │
                                                     &trans       &trans            &trans       &trans
