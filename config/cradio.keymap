@@ -178,7 +178,7 @@
             bindings = <
         //╭───────────┬────────────┬──────────────┬────────────┬─────────────╮   ╭────────────┬─────────────┬─────────────┬────────────┬────────────╮
         //│  ESC      │  󰅖         │              │  󰑎         │            │   │  INS       │  HOME       │  󰘳          │  PG UP     │  󰘲         │
-            &kp ESC     &kp LC(W)    &kp LC(E)      &kp LC(R)    &kp LC(T)         &kp INS      &kp HOME      &kp RGUI      &kp PG_UP    &kp CAPS
+            &kp ESC     &kp LC(W)    &kp LC(E)      &kp LC(R)    &kp LC(T)         &kp INS      &kp HOME      &kp LGUI      &kp PG_UP    &kp CAPS
         //├───────────┼────────────┼──────────────┼────────────┼─────────────┤   ├────────────┼─────────────┼─────────────┼────────────┤────────────┤
         //│  󰘶        │  󰘴         │  󰘳           │  󰘵         │  󰘵          │   │  DELETE    │  END        │  󱨊          │  PG_DOWN   │  󰘶         │
             &sk LSHFT   &sk LCTRL    &sk LGUI       &sk LALT     &sk RALT          &ht RALT DEL &ht LALT END  &kp UP        &ht RCTRL PG_DN &sk RSHFT
