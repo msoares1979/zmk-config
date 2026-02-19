@@ -90,12 +90,6 @@
             display-name = "Toggle Layer On";
             toggle-mode = "on";
         };
-        loff: toggle_layer_off_only {
-            compatible = "zmk,behavior-toggle-layer";
-            #binding-cells = <1>;
-            display-name = "Toggle Layer Off";
-            toggle-mode = "off";
-        };
 	};
 
     conditional_layers {
@@ -130,7 +124,7 @@
             bindings = <
         //╭────────────┬────────────┬─────────────┬────────────┬────────────╮   ╭────────────┬────────────┬─────────────┬────────────┬────────────╮
         //│  ESC       │  Q         │            │  E         │  R         │   │            │  7         │  8          │  9         │  - /       │
-            &kp ESC      &kp Q        &kp UP        &kp E        &kp R           &loff GAMENUM &kp KP_N7    &kp KP_N8     &kp KP_N9    &ht KP_DIVIDE KP_MINUS
+            &kp ESC      &kp Q        &kp UP        &kp E        &kp R            &to KEYS     &kp KP_N7    &kp KP_N8     &kp KP_N9    &ht KP_DIVIDE KP_MINUS
         //├────────────┼────────────┼─────────────┼────────────┼────────────┤   ├────────────┼────────────┼─────────────┼────────────┤────────────┤
         //│  󰘶         │           │            │           │  F         │   │            │  4         │  5          │  6         │  + *       │
             &kp LSHFT    &kp LEFT     &kp DOWN      &kp RIGHT    &kp F            &none        &kp KP_N4    &kp KP_N5     &kp KP_N6    &ht KP_MULTIPLY KP_PLUS
@@ -148,7 +142,7 @@
             bindings = <
         //╭────────────┬────────────┬─────────────┬────────────┬────────────╮   ╭────────────┬────────────┬─────────────┬────────────┬────────────╮
         //│            │            │             │            │            │   │            │  󰳽 󰍽       │  󰍽          │  󰍽 󰳽       │  󰍽        │
-            &none        &none        &none         &none        &none            &loff MOUSE  &mkp LCLK    &mkp MCLK     &mkp RCLK    &msc SCRL_UP
+            &none        &none        &none         &none        &none            &to KEYS     &mkp LCLK    &mkp MCLK     &mkp RCLK    &msc SCRL_UP
         //├────────────┼────────────┼─────────────┼────────────┼────────────┤   ├────────────┼────────────┼─────────────┼────────────┤────────────┤
         //│            │            │             │            │            │   │            │  󰍽        │  󰍽         │  󰍽        │  󰍽        │
             &kp LSHFT    &kp LCTRL    &kp LGUI      &kp LALT     &kp RALT         &none      &mmv SCRL_LEFT &mmv MOVE_UP  &mmv SCRL_RIGHT &msc SCRL_DOWN
@@ -211,7 +205,7 @@
             &none        &kp F5       &kp F6        &kp F7       &kp F8           &kp LC(P)    &to KEYS     &bt BT_SEL 0  &kp K_VOL_DN  &kp C_BRI_DN
         //├────────────┼────────────┼─────────────┼────────────┼────────────┤   ├────────────┼────────────┼─────────────┼─────────────┼──────────────┤
         //│            │  F9        │  F10        │  F11       │  F12           │            │  󰍽         │   BT CLR   │  󰝟          │              │
-            &bootloader  &kp F9       &kp F10       &kp F11      &kp F12          &none        &lon MOUSE   &bt BT_CLR    &kp K_MUTE    &bootloader
+            &bootloader  &kp F9       &kp F10       &kp F11      &kp F12          &none        &to MOUSE    &bt BT_CLR    &kp K_MUTE    &bootloader
         //╰────────────┴────────────┴─────────────┼────────────┼────────────┤   ├────────────┼────────────┼─────────────┴─────────────┴──────────────╯
         //                                        │ [  #####] │  󱁐         │   │  󰌑         │ [ 󰁮 #####] │
                                                     &trans       &trans           &trans       &trans
