@@ -190,7 +190,10 @@
             &sk LSHFT   &sk LCTRL    &sk LGUI       &sk LALT     &sk RALT          &ht RALT DEL &ht LALT END  &kp UP        &ht RCTRL PG_DN &sk RSHFT
         //├───────────┼────────────┼──────────────┼────────────┼─────────────┤   ├────────────┼─────────────┼─────────────┼────────────┤────────────┤
         //│  │        │  󰖟         │             │           │   MENU      │   │            │            │  󱨉          │           │  \         │
-            &kp PIPE    &kp C_AL_WWW &kp C_AL_CALC &kp C_AL_FILES &kp K_CMENU      &none        &kp LEFT      &kp DOWN      &kp RIGHT    &kp BSLH
+            &kp PIPE    &ht C_AL_WWW K_CUT
+                                     &ht C_AL_CALC K_COPY
+                                                    &ht C_AL_FILES K_PASTE
+                                                                 &kp K_CMENU      &none        &kp LEFT      &kp DOWN      &kp RIGHT    &kp BSLH
         //╰───────────┴────────────┴──────────────┼────────────┼─────────────┤   ├────────────┼─────────────┼─────────────┴────────────┴────────────╯
         //                                        │           │  󱁐          │   │  󰌑         │ [ 󰁮 #####]  │
                                                     &trans       &trans            &trans       &trans
