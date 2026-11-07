@@ -191,7 +191,7 @@
             &kp N1       &kp N2        &kp N3      &kp N4       &kp N5            &kp N6       &kp N7       &kp N8       &kp N9       &kp N0
         //├────────────┼────────────┼────────────┼────────────┼────────────┤    ├────────────┼────────────┼────────────┼────────────┤────────────┤
         //│  `         │  ~         │  ^         │  "         │  '         │    │  [ {       │  (         │  )         │  ] }       │  \ |       │
-            &kp GRAVE    &kp TILDE    &kp CARET    &kp DQT      &as SQT           &as LBRC     &kp  LBKT    &kp RBKT     &as  RBRC    &as BSLH
+            &kp GRAVE    &kp TILDE    &kp CARET    &kp DQT      &as SQT           &as LBKT     &kp LPAR     &kp RPAR     &as RBKT     &as BSLH
         //├────────────┼────────────┼────────────┼────────────┼────────────┤    ├────────────┼────────────┼────────────┼────────────┤────────────┤
         //│  !         │  @         │  #         │  $         │  %         │    │  ^         │  &         │  *         │  - _       │  = +       │
             &kp EXCL     &kp AT       &kp HASH     &kp DOLLAR   &kp PRCNT         &kp CARET    &kp AMPS     &kp STAR     &as MINUS    &as EQUAL
