@@ -152,13 +152,13 @@
             bindings = <
         //╭────────────┬────────────┬─────────────┬────────────┬────────────╮   ╭────────────┬────────────┬─────────────┬────────────┬────────────╮
         //│  ESC       │  Q         │            │  E         │  R         │   │  NumLock   │  7         │  8          │  9         │  - /       │
-            &kp ESC      &kp Q        &kp UP        &kp E        &kp R            &KP_NUM      &kp N7       &kp N8        &kp N9       &ht KP_DIVIDE KP_MINUS
+            &kp ESC      &kp Q        &kp UP        &kp E        &kp R            &kp KP_NUM   &kp KP_N7    &kp KP_N8     &kp KP_N9    &ht KP_DIVIDE KP_MINUS
         //├────────────┼────────────┼─────────────┼────────────┼────────────┤   ├────────────┼────────────┼─────────────┼────────────┤────────────┤
         //│  󰘶         │           │            │           │  F         │   │  ( )       │  4         │  5          │  6         │  + *       │
-            &kp LSHFT    &kp LEFT     &kp DOWN      &kp RIGHT    &kp F            &ht RPAR LPAR &kp N4       &kp N5        &kp N6       &ht KP_MULTIPLY KP_PLUS
+            &kp LSHFT    &kp LEFT     &kp DOWN      &kp RIGHT    &kp F            &ht RPAR LPAR &kp KP_N4   &kp KP_N5     &kp KP_N6    &ht KP_MULTIPLY KP_PLUS
         //├────────────┼────────────┼─────────────┼────────────┼────────────┤   ├────────────┼────────────┼─────────────┼────────────┤────────────┤
         //│  󰘴         │  Z         │  X          │  C         │  V         │   │  0         │  1         │  2          │  3         │  , .       │
-            &kp LCTRL    &kp Z        &kp X         &kp C        &kp V            &kp N0       &kp N1       &kp N2        &kp N3       &ht KP_DOT KP_COMMA
+            &kp LCTRL    &kp Z        &kp X         &kp C        &kp V            &kp KP_N0    &kp KP_N1    &kp KP_N2     &kp KP_N3    &ht KP_DOT KP_COMMA
         //╰────────────┴────────────┴─────────────┼────────────┼────────────┤   ├────────────┼────────────┼─────────────┴────────────┴────────────╯
         //                                        │           │  󱁐         │   │  󰌑         │  󰁮         │
                                                     &trans       &trans           &trans       &trans
